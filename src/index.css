@@ -1,11 +1,14 @@
 nav{
-    height: 80px;
+    height: 100px;
 }
 .container {
     font-size: 30px;
 }
 .brand-logo{
     font-weight: 700;
+}
+.med-text{
+    font-size: 15px;
 }
 .main-img{
     width: 100%;
@@ -160,4 +163,12 @@ nav{
 }
 .label {
     font-size: 14px;
+}
+.mobile-btn{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mobile-btns-container{
+    text-align: center;
 }

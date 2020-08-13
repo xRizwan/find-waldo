@@ -8,9 +8,19 @@ export default function Leaderboard(){
 
     useEffect(() => {
         let db = firebase.firestore();
-        db.collection('winners').onSnapshot(snapshot => {
-            let changes = snapshot.docChanges();
-            changeScores(changes);
+        // db.collection('winners').onSnapshot(snapshot => {
+        //     let changes = snapshot.docChanges();
+        //     changeScores(changes);
+        //     changeLoader(false);
+        // })
+        let arr = [];
+
+        db.collection('winners').get().then(snapshot => {
+            snapshot.docs.forEach(snap => {
+                arr.push(snap)
+            })
+        }).then(() => {
+            changeScores(arr)
             changeLoader(false);
         })
     }, [])
@@ -22,20 +32,20 @@ export default function Leaderboard(){
             <div className="row">
                 {scores.map(score => {
                     return(
-                        <div className="col s12 m6 l4 animate" key={score.doc.id}>
+                        <div className="col s12 m6 l4 animate" key={score.id}>
                             <div className="card">
                                 <div 
                                     className="indigo darken-3 white-text center card-title"
-                                    >{score.doc.data().name}
+                                    >{score.data().name}
                                 </div>
                                 <div
                                     className="card-content center indigo white-text">
                                     <span>Words From The Player:</span>
                                     <br />
-                                    {score.doc.data().description}
+                                    {score.data().description}
                                 </div>
                                 <div className="center">
-                                    Completed In   {score.doc.data().time} minutes!
+                                    Completed In   {score.data().time} minutes!
                                 </div>
                             </div>
                         </div>

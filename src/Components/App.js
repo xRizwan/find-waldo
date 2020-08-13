@@ -7,21 +7,27 @@ import Leaderboard from './Leaderboard';
 // firebase
 //import firebase from '../config/config'
 //const db = firebase.firestore();
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 
 function App(){
 
   return (
-    <Router>
-        <Header />
-        <Route path="/" exact >
-          <Main />
-        </Route>
-        <Route path="/leaderboards">
-          <Leaderboard />
-        </Route>
-    </Router>
+    <React.Fragment>
+      <Router>
+        <div>
+          <Header />
+          <Switch>
+            <Route exact path="/">
+              <Main />
+            </Route>
+            <Route path="/leaderboards">
+              <Leaderboard />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    </React.Fragment>
   )
 }
 

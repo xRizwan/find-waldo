@@ -21,11 +21,9 @@ function Header(props){
         <React.Fragment>
             <nav className="pink lighten-2">
                 <div className="navwrapper">
-                    <Link to="/">
-                        <a href="/" className="brand-logo center teal-text text-darken-4">Where's Waldo!?</a>
-                    </Link>
+                    <a href="/" className="brand-logo center teal-text text-darken-4">Where's Waldo!?</a>
                 </div>
-                <div className="right">
+                <div className="right hide-on-small-only">
                     <button
                         className="btn waves-effect light-blue darken-3"
                         onClick={makeVisible}>
@@ -36,7 +34,7 @@ function Header(props){
                             <Link to="/leaderboards">Leaderboard</Link>
                     </button>
                 </div>
-                <div className="left people">
+                <div className="left people hide-on-med-and-down">
                     <span className="person">
                         <span>Minny</span>
                         <span><img alt="find1" className="responsive-image find" src={find1} /></span>
@@ -51,6 +49,17 @@ function Header(props){
                     </span>
                 </div>
             </nav>
+            <div className="hide-on-med-and-up mobile-btns-container">
+                    <button
+                        className="btn waves-effect light-blue darken-3 mobile-btn"
+                        onClick={makeVisible}>
+                            Instructions
+                    </button>
+                    <button
+                        className="btn waves-effect light-blue darken-3 mobile-btn">
+                            <Link to="/leaderboards">Leaderboard</Link>
+                    </button>
+                </div>
             <div ref={modalRef} className="container modal indigo white-text">
                 <h3 className='center'>Intructions</h3>
                 <div className="center">Your Task Is To Find:</div>

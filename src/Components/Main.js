@@ -8,10 +8,10 @@ function MainImage(props){
     // states
     let [ seconds, changeSeconds ] = React.useState(0);
     let [ minutes, changeMinutes ] = React.useState(0);
-    let [minny, changeMinny] = React.useState(false);
-    let [waldo, changeWaldo] = React.useState(false);
-    let [carry, changeCarry] = React.useState(false);
-    let [timer, changeTimer] = React.useState(true);
+    let [ minny, changeMinny ] = React.useState(false);
+    let [ waldo, changeWaldo ] = React.useState(false);
+    let [ carry, changeCarry ] = React.useState(false);
+    let [ timer, changeTimer ] = React.useState(true);
 
     // references to elements since too many states
     let panelRef = React.useRef();
@@ -88,6 +88,8 @@ function MainImage(props){
         } else {
             panelRef.current.style.display = 'flex';
         }
+
+        //let imageWidth = window.getComputedStyle(e.target, null).width;
     }
 
     function check(e){
