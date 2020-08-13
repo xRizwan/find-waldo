@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2b4ea5464294b69e68e3a714f2aa4c13",
+    "revision": "b949b30239ae4ca7f55bde4fd107aec7",
     "url": "/find-waldo/index.html"
   },
   {
-    "revision": "0772a4589f440677773f",
+    "revision": "ef5249e01ed3f42ec242",
     "url": "/find-waldo/static/css/main.a44dd290.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/find-waldo/static/js/2.8d988f7e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0772a4589f440677773f",
-    "url": "/find-waldo/static/js/main.41ca4a07.chunk.js"
+    "revision": "ef5249e01ed3f42ec242",
+    "url": "/find-waldo/static/js/main.dec6e085.chunk.js"
   },
   {
     "revision": "55f455ef7472478c690a",
