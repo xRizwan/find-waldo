@@ -4,6 +4,6 @@
   
 ### Main Learning Objectives.
   > &nbsp;&nbsp;&nbsp;&nbsp; Integrating Firebase in React App. <br/>
-  > &nbsp;&nbsp;&nbsp;&nbsp; Using Firestore to save and user data for displaying leaderboard. <br/>
+  > &nbsp;&nbsp;&nbsp;&nbsp; Using Firestore to save and get user data for displaying leaderboard. <br/>
   > &nbsp;&nbsp;&nbsp;&nbsp; Using React Router to create different links. <br/>
   > &nbsp;&nbsp;&nbsp;&nbsp; Using only React Hooks and functional components instead of class-based. <br/>
