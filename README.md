@@ -1,6 +1,6 @@
 ## Where's Waldo Game
-  &nbsp;&nbsp;&nbsp;&nbsp; A game where user has to find certain individuals from the image given.<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp; After all individuals are found the user is then asked to submit his details which are shown in the 'leaderboards' page.
+  > &nbsp;&nbsp;&nbsp;&nbsp; A game where user has to find certain individuals from the image given.<br/>
+  > &nbsp;&nbsp;&nbsp;&nbsp; After all individuals are found the user is then asked to submit his details which are shown in the 'leaderboards' page.
   
 ### Main Learning Objectives.
   &nbsp;&nbsp;&nbsp;&nbsp; Integrating Firebase in React App. <br/>
