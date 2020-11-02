@@ -1,3 +1,6 @@
+body{
+    overflow: none;
+}
 nav{
     height: 100px;
 }
